@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="game-container">
+    <h1>HANGMAN GAME</h1>
+    <div class="hangman">
+        <div class="gallows">
+            <div class="vertical-pole"></div>
+            <div class="horizontal-bar"></div>
+            <div class="rope"></div>
+        </div>
+
+        <div class="body-parts head"></div>
+        <div class="body-parts body"></div>
+        <div class="body-parts left-arm"></div>
+        <div class="body-parts right-arm"></div>
+        <div class="body-parts left-leg"></div>
+        <div class="body-parts right-leg"></div>
+    </div>
+
+    <div class="word"></div>
+    <p class="hint">Hint: <span class="question"></span></p>
+    <p class="guesses">Incorrect guesses: <span class="incorrect-guesses">0</span></p>
+    <div class="keyboard"></div>
+    <div class="overlay"></div>
+    <div class="modal">
+        <p class="result"></p>
+        <p class="reveal-word"></p>
+        <button onclick="startGame()">Play Again</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
